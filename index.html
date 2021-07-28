@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,52 @@
     <title>Zomato Clone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <img src="./assets/logo.png "  alt="logo" class="logo">
+                <img src="./assets/logo.png " alt="logo" class="logo">
             </div>
             <div class="navbar-content">
                 <div>
 
-                    <button class="navbar-button">Order Food </button>
+                    <button class="primary_button">Order Food </button>
                 </div>
             </div>
-           
+
         </nav>
     </header>
-
+    <main class="container">
+        <section class="hero_container">
+            <div class="hero_image_container">
+                <img src="assets/hero.jpg" alt="food" class="hero_image" />
+                <img src="assets/svg/heroShape.svg" alt="heroShape" class="hero_shape" />
+                <img src="assets/svg/herobgpattren.svg" alt="pattern" class="hero_pattern" />
+            </div>
+            <div class="hero_description">
+                <h1 class="hero_text">Order food from favourite restraunts near you.</h1>
+                <button class="primary_button hero_button">Order Now</button>
+            </div>
+        </section>
+        <section class="video_container">
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/70389310" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="chef_video"></iframe>
+            </div>
+            <div class="video_text">Your food will be prepared safely with an experienced chef, without compromising
+                 on the quality and hygiene.</div>
+        </section>
+        <section class="food_section_container">
+            <h1 class="hero_text food_list_head ">Explore our menu</h1>
+        </section>
+    </main>
 </body>
+
 </html>
