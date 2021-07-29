@@ -14,8 +14,8 @@
         rel="stylesheet">
 
 </head>
-
-<body>
+<!-- body start here -->
+<body>  
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
@@ -24,7 +24,7 @@
             <div class="navbar-content">
                 <div>
 
-                    <button class="primary_button">Order Food </button>
+                    <button class="primary_button">Order Food</button>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
                 <img src="assets/svg/herobgpattren.svg" alt="pattern" class="hero_pattern" />
             </div>
             <div class="hero_description">
-                <h1 class="hero_text">Order food from favourite restraunts near you.</h1>
+                <h1 class="primary_text">Order food from favourite restaurants near you.</h1>
                 <button class="primary_button hero_button">Order Now</button>
             </div>
         </section>
@@ -48,12 +48,78 @@
                     allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="chef_video"></iframe>
             </div>
             <div class="video_text">Your food will be prepared safely with an experienced chef, without compromising
-                 on the quality and hygiene.</div>
+                on the quality and hygiene.</div>
         </section>
-        <section class="food_section_container">
-            <h1 class="hero_text food_list_head ">Explore our menu</h1>
+        <section class="food_list_container">
+            <h1 class="primary_text " style="text-align: center;">Explore our menu</h1>
+            <div class="food_list_daigonal"> </div>
+            <div class="food_list">
+
+
+                <div class="food_list_item">
+                    <!-- this is car 1 -->
+                    <img src="assets/burger.jpg" alt="burger image" class="food_image" />
+                    <div class="food_list_description">
+                        <h4 class="food_title">Burgers</h4>
+                        <p class="food_paragraph">Burger King, Mcdonalds, Burger Place<span
+                                style="color: red;">+3</span> </p>
+                    </div>
+                </div>
+                <div class="food_list_item ">
+                    <!-- this is card 2 -->
+                    <img src="assets/pizza.jpg" alt="burger image" class="food_image" />
+                    <div class="food_list_description">
+                        <h4 class="food_title">Pizza</h4>
+                        <p class="food_paragraph">
+                            Pizza Hut, Domino's Pizza<span style="color: red;">+3</span> </p>
+                    </div>
+                </div>
+                <div class="food_list_item">
+                    <!-- this is card 3 -->
+                    <img src="assets/iceCream.jpg" alt="burger image" class="food_image" />
+                    <div class="food_list_description">
+                        <h4 class="food_title">Ice Creams</h4>
+                        <p class="food_paragraph">Baskin Robins, Ibaco<span style="color: red;">+3</span> </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="restaurant_list_container">
+            <div class="restaurant_list_text">
+                <h1 class="primary_text ">Order from 100s of restraunts</h1>
+            </div>
+            <div class="restaurant_list_images">
+                <div class="restaurant_list_row1">
+                    <img src="assets/restaurant1.jpg" alt="restaurant1" class="restaurant1">
+                    <img src="assets/restaurant2.jpg" alt="restaurant2" class="restaurant2">
+                </div>
+                <div class="restaurant_list_row2">
+                    <img src="assets/restaurant3.jpg" alt="restaurant3" class="restaurant3">
+                    <img src="assets/restaurant4.jpg" alt="restaurant4" class="restaurant4">
+                </div>
+            </div>
+
+        </section>
+        <section class="query_container">
+            <div class="query_data">
+
+                <div class="query_head">
+                    <h1 class="primary_text">Stay Updated</h1>
+                </div>
+                <form class="query_form">
+                    <input type="email" placeholder=" email@email.com" class="input_mail">
+                    <button type="submit" class="primary_button form_button"> Get Updates</button>
+                </form>
+            </div>
+        </section>
+        <section class="quote_container">
+            <div class="quote_pic"></div>
+            <h2 class="quote_head">When a man's stomach is full it makes no difference whether he is rich or poor.
+            </h2>
+
+
         </section>
     </main>
 </body>
-
 </html>

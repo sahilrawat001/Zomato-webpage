@@ -10,8 +10,6 @@ body {
     overflow-x: hidden;
     transition:all 0.3s;
 }
-
-
 button {
   background-color: transparent;
   border: none;
@@ -19,7 +17,6 @@ button {
 section {
   margin:20px 0;
 }
-
 .navbar {
 
     position: sticky;
@@ -65,14 +62,12 @@ section {
     margin: 0 auto;
     width: 100%;
     padding:0  15px;
-  } 
-  
+  }   
 .hero_image_container {
   
   position: relative;
   width:100%;
 }
-
   .hero_image {
     width: 100%;
     position: absolute;
@@ -93,14 +88,13 @@ section {
     align-items:flex-start;
   }
   
-  .hero_text {
-    font-size: 1.8rem;
+  .primary_text {
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0px;
     line-height: 2.25rem;
     color: #1d3557;
   }
-
   .video_container {
     margin-top: 2rem;
   display: flex;
@@ -109,7 +103,6 @@ section {
   justify-content: center;
   width: 100%;
 }
-
     .video {
       position: relative;
 
@@ -122,7 +115,7 @@ section {
       to right,
       #ce3010 0%,
       #fa5ba2 51%,
-        #fc2a00 100%
+        #fc2a01 100%
         );
         position: absolute;
         top: 0;
@@ -139,18 +132,123 @@ section {
     font-weight: 300;
     text-align: center;
     }
+    .food_list_container {
+      width: 100%;
+      margin: 2rem 0;
+      position: relative;
+    }
+    .food_list_item {
+      background-color: white;
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.527),
+      0 6px 8px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    .food_image {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+    }
+    .food_title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin:0.5rem 0;
+      color: #1d3557 ;
+    }
+    .food_paragraph {
+      margin: 0%;
+      color:#1d3557
+    }
+    .food_list_description {
+      padding: 1rem;
+    }
+    .food_list {
+      margin: 1rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+     
+    }
+    .restaurant_list_container {
+      margin-top: 3rem;
+    }
+    .restaurant_list_row1 {
+      display: flex;
+      margin-top: 10px;
+      align-items: baseline;
+    }
+    .restaurant_list_row2 {
+      display: flex;
+      margin-top: 10px;
+      align-items: flex-start;
+    }
+    .restaurant1 , .restaurant4 {
+      border-radius: 4px;
+      margin: 0 4px;
+      width: 150px;
+      height: 80px;
+    }
+    .restaurant2 , .restaurant3 {
+      
+      border-radius: 4px;
+      margin: 0 4px;
+      width: 200px;
+      height: 100px;
+    }
+    .input_mail { margin-top: 10px;
+      border: #ff512f;
+      width: 200px;
+      height:2rem ;
+      border-style: solid;
+      border-width:1px;
+      background-color:#ffe4f0 ;
+    }
+    .query_form {
+      width: 100%;
+      height: 100%;
+    }
+    .quote_container {
+     position: relative;
+      margin-top: 3rem;
+      margin-bottom: 4rem;
+      align-items: center;
+       display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      height: 200px;
+      width: 100%;
+      /* background-color: rgb(44, 44, 10); */
+      background: url(https://wallpaperaccess.com/full/4337522.jpg) ;
+      background-position:center;
+     background-size:100%;
+     border-radius: 5px;
+    }
+   .quote_pic {
+     opacity: 100%;
+     position:absolute;
+     width: 100%;
+     height: 20px;
+   } 
+   
+    .quote_head {
+      text-shadow: 0 0 3px #8100a1, 0 0 5px #000000;
+      color: #fcf7f7;
+      text-align:center;
+      padding: 1rem;
+    }
+    
+
+    /* media started here */
   @media (min-width: 768px ) {
 .hero_container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-
-  
 }
 .hero_image{
   margin-top: 2rem;
 }
-.hero_text {
+.primary_text {
   font-weight:900 ;
   font-size: 2rem;
 }
@@ -167,9 +265,43 @@ section {
   margin-left: 1.5rem;
 
 }
-.food_list_head {
-  text-align: center;
-  fo
+.food_list {
+  flex-direction: row;
+  padding: 2rem;
+}
+.food_list > div:nth-child(2) {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+.food_list_daigonal {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transform:skewY(-5deg);
+  background-image: linear-gradient(
+    to right,
+    #ce3010 0%,
+    #fa5ba2 51%,
+      #fc2a00 100%
+      );
+    z-index: -3;
+}
+.restaurant_list_text {
+  width: 100%;
+}
+.restaurant_list_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.query_data {
+  margin: 5rem 10rem;
+}
+.input_mail  {
+  width: 300px;
+  height: 2.5rem;
 }
 }
 
@@ -201,8 +333,23 @@ section {
     .video_text {
       width:80%;
     }
-  
+  .primary_text {
+   font-size: 3.2rem;
+   padding: 10px;
+   line-height: 3rem;
   }
+  .query_head {
+    margin-bottom: 0.5rem;
+  }
+  .query_data {
+    margin: 5rem 20rem;
+  }
+  .input_mail  {
+    width: 350px;
+    height: 2.5rem;
+  }
+  }
+
 
     @media (min-width: 1280px ) {
       .container {
@@ -219,11 +366,22 @@ section {
         font-weight: 500;
         margin-bottom: 3rem;
       }
+      .restaurant1 , .restaurant4 {
+        border-radius: 4px;
+        margin: 0 4px;
+        width: 250px;
+        height: 160px;
+      }
+      .restaurant2 , .restaurant3 {
+        border-radius: 4px;
+        margin: 0 4px;
+        width: 320px;
+        height: 200px;
+      }
     }
     @media (min-width: 1536px ){
       .container {
         max-width: 1250px;
       }
-     
-      
-  }
+    }
+  
