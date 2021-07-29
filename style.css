@@ -236,9 +236,38 @@ section {
       text-align:center;
       padding: 1rem;
     }
-    
+    .footer_container {
+      background-image: linear-gradient(
+        to right,
+        #ce3010 0%,
+        #e02b7d 51%,
+          #fc2a01 100%
+          );
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+    }
+
+    .logo_end {
+      color: white;
+     filter: brightness(100) invert(0);
+      padding: 0;
+      margin: 0;
+    }
+    .footer_list_items {
+      list-style: none;
+      font-size: 1rem;
+      color: white;
+    }
+    .list_end {
+      padding: 2px;
+    }
 
     /* media started here */
+
+    @media (max-width:768){
+      
+    }
   @media (min-width: 768px ) {
 .hero_container {
   display: flex;
