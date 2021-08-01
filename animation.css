@@ -1,0 +1,110 @@
+
+.logo {
+   
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes movedown {
+    0% {
+         transform: translateY(-100px);
+         visibility:visible;
+    }
+
+    100% {
+         transform: translateY(0);
+         visibility:visible;
+    }
+
+}
+
+.top_button {
+   
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes movedown {
+    0% {
+         transform: translateY(-100px);
+         visibility:visible;
+    }
+
+    100% {
+         transform: translateY(0);
+         visibility:visible;
+    }
+
+}
+
+.hero_button {
+   
+    animation: moveright 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes moveright {
+    0% {
+         transform: translateX(-100px);
+         visibility:visible;
+    }
+
+    100% {
+         transform: translateX(0);
+         visibility:visible;
+    }
+
+}
+.hero_text{
+   
+    animation: moveright 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes moveright {
+    0% {
+         transform: translateX(-100px);
+         visibility:visible;
+    }
+
+    100% {
+         transform: translateX(0);
+         visibility:visible;
+    }
+
+}
+.hero_image_container {
+   
+    animation: moveleft 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+   animation-fill-mode: forwards;
+}
+@keyframes moveleft {
+    0% {
+         transform: translateX(100px);
+         visibility:visible;
+    }
+
+    100% {
+         transform: translateX(0);
+         visibility:visible;
+    }
+
+}
+.food_list_item:hover {
+   
+    transform: scale(1.1);
+
+}
+.primary_button:hover {
+transform: scale(1.1);
+}
+.list_end:hover {
+    transform: scale(1.1);
+ 
+}

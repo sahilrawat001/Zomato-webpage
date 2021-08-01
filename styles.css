@@ -1,0 +1,17 @@
+.logo_end {
+    animation: movedowm 1s linear 1;
+    animation-delay: 1s;
+    visibility:hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown {
+    0% {
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+}
